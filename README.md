@@ -13,6 +13,12 @@ npm run build
 npm start
 ```
 
+## Test
+
+```zsh
+npm test
+```
+
 ## Development
 
 ```zsh
