@@ -22,4 +22,4 @@ npm run watch
 ## TODO
 
 - Keyboard Input
-- Styling & Layout
+- Responsive Styling & Layout
