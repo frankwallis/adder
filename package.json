@@ -1,0 +1,45 @@
+{
+  "name": "adder",
+  "version": "0.1.0",
+  "description": "Simple number adder",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "./node_modules/jest-cli/bin/jest.js ",
+    "build": "mkdir -p dist && ./node_modules/webpack/bin/webpack.js --progress ",
+    "watch": "mkdir -p dist && ./node_modules/webpack/bin/webpack.js --progress --watch ",
+    "start": "./node_modules/live-server/live-server.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frankwallis/adder.git"
+  },
+  "author": "Frank Wallis",
+  "license": "MIT",
+  "homepage": "https://github.com/frankwallis/adder",
+  "devDependencies": {
+    "babel-jest": "^5.3.0",
+    "babel-loader": "^4.2.0",
+    "css-loader": "^0.14.5",
+    "jest-cli": "^0.4.13",
+    "live-server": "^0.7.1",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.7.3"
+  },
+  "dependencies": {
+    "react": "^0.13.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/*"
+    ]
+  },
+  "engine": "node 0.10"
+}
