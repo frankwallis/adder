@@ -59,11 +59,11 @@ export class Calculator extends React.Component {
       return (
          <div className="adder-container">
             <div className="adder-row">
-               <span className="adder-operand">{this.calculatorStore.operand}</span> 
+               <span className="adder-operand adder-display">{this.calculatorStore.operand}</span> 
             </div>
             
             <div className="adder-row">
-               <span className="adder-total">{this.calculatorStore.total}</span>
+               <span className="adder-total adder-display">{this.calculatorStore.total}</span>
             </div>
             
             {buttonrows}
